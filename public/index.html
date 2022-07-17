@@ -1,89 +1,167 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Yousef Koriem</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">Yousef Koriem</a>
+        <nav class="navigation">
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <!-- <a href="#articles">Articles</a> -->
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.9.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.9.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.9.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.9.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.9.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.9.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.9.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.9.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.9.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.9.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <section class="main">
+        <div>
+            <h2>Hello, I'm Yousef Koriem<br><span>Full-Stack Developer</span></h2>
+            <h3>I build websites and applications</h3>
+            <a href="#projects" class="main-btn">See projects</a>
+            <div class="social-icons">
+                <a href="https://github.com/yousefkoriem/"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yousef-koriem/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/iibluefox/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCf_BNGUpAwvEoUJ49opWC4w"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <section class="cards" id="services">
+        <h2 class="title">Services</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="info">
+                    <h3>Web Development</h3>
+                    <p>make a website</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-atom"></i>
+                </div>
+                <div class="info">
+                    <h3>Cross-App Development</h3>
+                    <p>make an electron Application</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="img/personal-web.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Front-End Development</p>
+                    <strong class="project-title">
+                        <span>Personal Website</span>
+                        <a href="https://yousefkoriem.github.io/old/" target="_blank" class="more-details">More Details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="img/perphawk-web.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Front-End Development</p>
+                    <strong class="project-title">
+                        <span>Team Website</span>
+                        <a href="https://perphawk.github.io/" target="_blank" more-details">More Details</a>
+                    </strong>
+                </div>
+            </div>
+            <!--<div class="project-card">
+                <div class="project-img">
+                    <img src="img/personal-web.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Front-End Development</p>
+                    <strong class="project-title">
+                        <span>Education Website</span>
+                        <a href="#" class="more-details">More Details</a>
+                    </strong>
+                </div>
+            </div>
+        </div>-->
+    </section>
+    <!-- <section class="cards" id="articles">
+        <h2 class="title">Articles</h2>
+        <div class="content">
+            <a href="">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <div class="info">
+                        <h3>How to install any linux distro</h3>
+                        <p>Read more</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-stopwatch"></i>
+                    </div>
+                    <div class="info">
+                        <h3>How to manage time</h3>
+                        <p>Read more</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>-->
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <section class="cards contact" id="contact">
+        <h2 class="title">Contact me</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>yousefkoriem@live.com</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="icon">
+                    <i class="fab fa-wordpress"></i>
+                </div>
+                <div class="info">
+                    <h3>Blog</h3>
+                    <a href="#contact"><p>Coming Soon</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer" id="footer">
+        <p class="footer-title">Copyright &copy; <span>Yousef Koriem</span></p>
+            <div class="social-icons">
+                <a href="https://github.com/yousefkoriem/"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yousef-koriem/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/iibluefox/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCf_BNGUpAwvEoUJ49opWC4w"><i class="fab fa-youtube"></i></a>
+                <a href="#footer"><i class="fab fa-wordpress"></i></a>
+            </div>
+    </footer>
+</body>
 </html>
