@@ -1,0 +1,19 @@
+{
+  "name": "yousefkoriem.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yousefkoriem/yousefkoriem.github.io.git"
+  },
+  "author": "Yousef Koriem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yousefkoriem/yousefkoriem.github.io/issues"
+  },
+  "homepage": "https://github.com/yousefkoriem/yousefkoriem.github.io#readme"
+}
