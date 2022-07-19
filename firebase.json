@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "yousefkoriem",
     "public": "public",
     "ignore": [
       "firebase.json",
@@ -50,5 +51,7 @@
       "port": 9899
     }
   },
-  "remoteconfig": {}
+  "remoteconfig": {
+    "template": "remoteconfig.template.json"
+  }
 }
