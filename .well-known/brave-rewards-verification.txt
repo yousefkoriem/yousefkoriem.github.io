@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: yousefkoriem.github.io
+Token: a35a2975533bc9c2b5259173b32ea899d2302e4e26d938552e920add2c53bb0d
