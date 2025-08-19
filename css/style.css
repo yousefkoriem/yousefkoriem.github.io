@@ -154,8 +154,60 @@ section{
     margin: 10px;
 }
 
+.education-date{
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.education-details{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.education-details li{
+    color: #333;
+    font-size: 0.9em;
+    margin: 5px 0;
+    padding: 2px 0;
+}
+
+.education-details li:before{
+    content: "• ";
+    color: #184add;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
 .content a{
     text-decoration: none;
+}
+
+#education{
+    background-color: #080016;
+}
+
+#education .card{
+    background-color: #ffff;
+    border: 1px solid #ffff;
+}
+
+#education .card .icon{
+    color: #184add;
+}
+
+#education .info h3{
+    color: #184add;
+}
+
+#education .education-date{
+    color: #666;
+}
+
+#education .education-details li{
+    color: #333;
 }
 
 .projects{
