@@ -71,11 +71,11 @@ section{
     font-weight: 600;
 }
 
-.main h3{
+.main h4{
     background-repeat: no-repeat;
     color: #ffff;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
