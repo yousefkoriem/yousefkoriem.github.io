@@ -211,6 +211,47 @@ section{
 }
 
 .projects{
+/* Skills section styling */
+#skills {
+    background-color: #080016;
+}
+#skills .card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #222;
+}
+#skills .card .icon {
+    color: #184add;
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+#skills .info h3 {
+    color: #184add;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 10px 0;
+}
+#skills .skills-details {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+#skills .skills-details li {
+/* Indent nested lists in hard skills */
+#skills .skills-details ul {
+    padding-left: 24px;
+}
+    color: #333;
+    font-size: 0.95em;
+    margin: 6px 0;
+    padding: 2px 0;
+}
+#skills .skills-details li:before {
+    content: "• ";
+    color: #184add;
+    font-weight: bold;
+    margin-right: 5px;
+}
     background-color: #080016;
 }
 
